@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Valerie Applepie">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+
+        <!-- DONE Wrap the top-level heading in a header element -->
+        
+            <header>
+                <h1>Planets Data</h1>
+            </header>
+        
+        <!--DONE Add a main element to contain the table -->
+            
+          <main>
+              <!--DONE Add the table element. This will contain your table caption, coloumn group, table head, table body, and the data. -->
+                
+               <table> 
+                <!-- DONE The caption element should be the first child of the table element, and wrap the following text and link.-->
+        
+                   <caption>
+                       Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
+                   </caption>
+                       <!-- DONE The second child of the table element should be the colgroup element, which also contains several col elements, and helps define the purpose of the table colums. -->
+                   <colgroup>
+                       <col>
+                       <col>
+                       <col>
+                       <col>
+                       <col>
+                       <col>
+                       <col>
+                       <col>
+                       <col>
+                       <col>
+                       <col>
+                       <col>
+                       <col>
+                    </colgroup>
+                <!-- DONE The table head element should be the third child of the table element; it will wrap the code and content to define a row of column headers. -->    
+                    <thead>
+                        <tr>
+                            <th colspan= "2"> </th>
+                            <th headers= "Name" scope= col>Name</th>
+                            <th headers= "Mass" scope= col>Mass (10<sup>24</sup>kg)</th>
+                            <th headers= "Diameter" scope= col>Diameter (km)</th>
+                            <th headers= "Density" scope= col>Density (kg/m<sup>3</sup>)</th>
+                            <th headers= "Gravity" scope= col>Gravity (m/s<sup>2</sup>)</th>
+                            <th headers= "Length of Day" scope= col>Length of day (hours)</th>
+                            <th headers= "Distance from Sun" scope= col>Distance from Sun (10<sup>6</sup>km)</th>
+                            <th headers= "Mean temperature" scope= col>Mean temperature (°C)</th>
+                            <th headers= "Number of moons" scope= col>Number of moons</th>
+                            <th headers= "Notes" scope= col>Notes</th>
+                            <th headers= "Image" scope= col>Image</th>
+                        </tr>
+                    </thead>
+                <!-- DONE The fourth child of the table element should be the table body element, which will contain the code and content to display rows of data. -->
+                    <tbody>
+                       <!-- Terrestrial Planets-->
+                        <tr scope= rowgroup>
+                            <td colspan="2" rowspan= "4">Terrestial planets</td>
+                            <!--Mercury-->
+                            <td scope= row> Mercury </td>
+                            <td>0.330 </td>
+                            <td>4,879</td>
+                            <td> 5427</td>
+                            <td>3.7</td>
+                            <td>4222.6</td>
+                            <td>57.9 </td>
+                            <td>167 </td>
+                            <td>0 </td>
+                            <td>Closest to the Sun</td>
+                            <td><img src="images/mercury.jpg" alt="Image of planet Mercury"></td>
+                        </tr>
+                        <!-- Venus--> 
+                        <tr scope= row>
+                            <td>Venus</td>
+                            <td>4.87 </td>
+                            <td>12,104 </td>
+                            <td> 5243</td>
+                            <td>8.9</td>
+                            <td>2802.0</td>
+                            <td>108.2</td>
+                            <td>464</td>
+                            <td>0</td>
+                            <td></td>
+                            <td><img src="images/venus.jpg" alt="Image of planet Venus"></td>
+                        </tr>
+                        <!-- Earth-->
+                        <tr scope= row>
+                            <td>Earth</td>
+                            <td>5.97</td>
+                            <td>12,756</td>
+                            <td>5514</td>
+                            <td>9.8</td>
+                            <td>24.0</td>
+                            <td>149.6</td>
+                            <td>15</td>
+                            <td>1</td>
+                            <td>Our world</td>
+                            <td><img src="images/earth.png" alt="Image of planet Earth"></td>
+                        </tr>
+                        <!--Mars--> 
+                        <tr scope= row>
+                            <td>Mars</td>
+                            <td>0.642</td>
+                            <td>6,792</td>
+                            <td>3933</td>
+                            <td>3.7</td>
+                            <td>24.7</td>
+                            <td>227.9</td>
+                            <td>-65</td>
+                            <td>2</td>
+                            <td>The red planet</td>
+                            <td><img src="images/mars.jpg" alt="Image of planet Mars"></td>
+                        </tr>
+                    <!-- Jovian Planets-->
+                        <tr scope= rowgroup>
+                            <td scope= row rowspan= "4">Jovian planets</td>
+                            <td scope= row rowspan= "2">Gas giants</td>
+                        <!--Jupiter-->
+                            <td scope=row>Jupiter</td>
+                            <td>1898</td>
+                            <td>142,984</td>
+                            <td>1326</td>
+                            <td>23.1</td>
+                            <td>9.9</td>
+                            <td>778.6</td>
+                            <td>-110</td>
+                            <td>67</td>
+                            <td>The largest planet</td>
+                            <td><img src="images/jupiter.jpg" alt="Image of planet Jupiter"></td>
+                        </tr>
+                        <!--Saturn--> 
+                        <tr scope= row>
+                            <td>Saturn</td>
+                            <td>568</td>
+                            <td>120,536</td>
+                            <td>687</td>
+                            <td>9.0</td>
+                            <td>10.7</td>
+                            <td>1433.5</td>
+                            <td>-140 </td>
+                            <td>62</td>
+                            <td></td>
+                            <td><img src="images/saturn.jpg" alt="Image of planet Saturn"></td>
+                        </tr>
+                        <tr scope= row>
+                            <td rowspan= "2">Ice giants</td>
+                        <!--Uranus-->
+                            <td>Uranus</td>
+                            <td>86.8</td>
+                            <td>51,118</td>
+                            <td>1271</td>
+                            <td>8.7</td>
+                            <td>17.2</td>
+                            <td>2872.5</td>
+                            <td>-195</td>
+                            <td>27</td>
+                            <td></td>
+                            <td><img src="images/uranus.jpg" alt="Image of planet Uranus"></td>
+                        </tr>
+                        <!--Neptune--> 
+                        <tr scope= row>
+                            <td>Neptune</td>
+                            <td>102</td>
+                            <td>49,528</td>
+                            <td>1638</td>
+                            <td>11.0</td>
+                            <td>16.1</td>
+                            <td>4495.1</td>
+                            <td>-200</td>
+                            <td>14</td>
+                            <td></td>
+                            <td><img src="images/neptune.jpg" alt="Image of planet Neptune"></td>
+                        </tr>
+                        <!-- Dwarf Planets-->
+                        <tr scope= row>
+                            <td colspan="2" rowspan= "4">Dwarf planets</td>
+                            <td>Pluto</td>
+                            <td>0.0146</td>
+                            <td>2,370</td>
+                            <td>2095</td>
+                            <td>0.7</td>
+                            <td>153.3</td>
+                            <td>5906.4</td>
+                            <td>-225</td>
+                            <td>5</td>
+                            <td>Declassified as a planet in 2006, but this <a href="http://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a>.</td>
+                            <td><img src="images/pluto.jpg" alt="Image of planet Pluto"></td>
+                        </tr>
+                    </tbody>
+                <!-- Please note that you do NOT need to add a table footer for this assignment. -->
+              </table>
+        </main>
+    </body>
+</html>
