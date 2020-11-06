@@ -83,7 +83,7 @@ header, footer {
     src: url(../fonts/montserrat-regular.ttf) format('truetype');
     font-style:normal;
     font-weight:normal;
-
+}
 @font-face {
     font-family:Josefinslab;
      src: url(../fonts/josefinslab-regular.ttf) format('truetype');
@@ -153,7 +153,7 @@ ol{
     list-style-type: lower-alpha;
 }
 
-long-list a:hover{
+.long-list a:hover{
     text-transform: uppercase;
 }
 
