@@ -1,0 +1,250 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+/* --- general setup ---*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size:16px;
+}
+
+body {
+    margin: 1.5rem auto;
+    width:90%;
+    min-width:56.25rem;
+}
+
+
+/*--- positioning and grid layout ---*/
+main {
+    overflow:auto;
+    min-width:45rem;
+   
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-gap: 1rem;
+    margin-top: 2.25rem;
+}
+
+article{
+  grid-column: 1;
+    grid-row: 1;
+}
+
+.subsection {
+    display:flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0.125rem;
+    padding: 0.125rem 0.125rem;
+    background-color: #F2F2F2;
+}
+
+aside{
+    grid-column: 2;
+    grid-row: 1;
+    padding-left: 1rem;
+    border-left: 1px solid black;
+}
+
+footer{
+ clear: both;
+    margin-top:1.5rem;    
+}
+
+/*--- imported typefaces ---*/
+@font-face {
+    font-family:roboto;
+    src: url(../fonts/sans-serif/roboto-regular.ttf) format('truetype');
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+    font-family:rozhaone;
+    src: url(../fonts/serif/rozhaone-regular.ttf) format('truetype');
+    font-style:normal;
+    font-weight:normal;
+}
+/* typography styles */
+html{
+    font-family: Roboto, Arial, sans-serif;
+}
+.highlight {
+    font-family: rozhaone;
+    background-color: #333366;
+    display: inline-block;
+    padding: 0.2rem 1rem;
+    color: #E8E8E8;
+    text-shadow: none;
+    border-radius: 0.5rem 0rem 0.5rem 0rem;
+    letter-spacing: 0.25rem;
+    box-shadow: 0.25rem 0.25rem 0.125rem #808080;
+    
+}
+
+.subsection{
+    font-family: roboto;
+}
+aside{
+    font-family: roboto;
+    font-size: 0.75rem;
+    color: #333333;
+}
+
+h1,h2,h3{
+  font-family: roboto, "arial", sans-serif
+}
+
+h1{
+    font-size: 3rem;
+    transform: rotate(5deg);
+    text-align: center;
+    text-shadow: 2px 2px 2px #C2C2C2;
+}
+h2{
+    font-size: 1.25rem;
+}
+h3{
+    font-size: 1rem;
+}
+
+p{
+    font-family: roboto, "arial", sans-serif;
+    font-size: 0.1.25rem;
+    color: #333333;
+}
+nav a{
+    font-family: "roboto", "arial", sans-serif;
+    color: darkblue;
+    text-decoration: none;
+}
+/*--- navigation menu ---*/
+
+nav{
+    border-top: 1px solid black; 
+    border-bottom: 1px solid black;
+}
+nav a{
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/*--- figures and images ---*/
+.article-image{
+    float: left;
+    padding-right: 0.5rem;
+    width: 30%;
+}
+
+figure{
+    
+}
+figcaption{
+    font-size: 0.75rem;
+}
+
+img{
+    width: 100%;
+}
+
+/* links*/
+.expand{
+   text-decoration: none;
+    border: 1rem;
+}
+
+a{
+   text-decoration: none;
+}
+
+a: link, 
+a:visited{
+    font-family: rozhaone;
+    color:darkslategray;
+}
+
+a: hover,
+a:focus {
+   font-family: rozhaone;
+    text-decoration: none;
+    color: darkslategray;
+}
+button{
+    font-family: rozhaone;
+    font-size: 1.75rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    border-top: 1px solid black;
+    background-color: #333366 ;
+    display: inline-block;
+    padding: 0.5rem ;
+    color: #E8E8E8;
+    box-shadow:  3px 3px 2px #5C5C5C;
+    border-radius: 0.5rem;
+    letter-spacing: 0.125rem;
+
+}
+
+/* footer styles */
+footer{
+    font-size: 0.75rem;
+    color: #333333;
+
+}
+.ideal{
+    color: black;
+    text-align: right;
+    text-decoration: none;
+}
